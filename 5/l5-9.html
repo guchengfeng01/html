@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<title>5.9圆弧</title>
+	<style type="text/css">
+		canvas{background: gray}
+	</style>
+</head>
+<body>
+	<canvas id="canvas" width="800" height="600">
+	</canvas>
+	<script type="text/javascript">
+		var canvas=document.getElementById('canvas');
+		var c=canvas.getContext('2d');
+		 c.lineWidth=2;
+		 c.strokeStyle="green";
+		 c.fillStyle="red";
+		 c.moveTo(400,500);
+		 c.lineTo(400,550);
+		 c.stroke();
+		 c.beginPath();
+		 c.arc(400,500,300,Math.PI*7/6,Math.PI*11/6,false);
+		 c.stroke();
+	</script>
+</body>
+</html>

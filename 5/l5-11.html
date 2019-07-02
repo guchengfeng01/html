@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+	<meta charset="utf-8">
+	<title>5.10绘制圆弧（2）</title>
+	<style type="text/css">
+		canvas{background: grey}
+	</style>
+</head>
+<body>
+	<canvas id="canvas" width="800px" height="600px">你的浏览器不支持html5
+	</canvas>
+	<script type="text/javascript">
+		var canvas=document.getElementById('canvas');
+		var c=canvas.getContext('2d');
+		 c.lineWidth=2;
+		 c.strokeStyle="green";
+		 c.fillStyle="orange";
+		 c.font="50px 宋书"
+		 c.strokeText("你的浏览器不支持", 200, 200)
+		 c.fillText("你的浏览器不支持", 200, 200)
+	</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+	<meta charset="utf-8">
+	<title>5.13绘制圆弧（2）</title>
+	<style type="text/css">
+		canvas{background: grey}
+	</style>
+</head>
+<body>
+	<canvas id="canvas" width="800px" height="600px">你的浏览器不支持html5
+	</canvas>
+	<script type="text/javascript">
+		var canvas=document.getElementById('canvas');
+		var c=canvas.getContext('2d');
+			g=c.createRadialGradient(400, 300, 10, 400, 300, 200);
+			g.addColorStop(0, "#000000");
+			g.addColorStop(0.5, "green");
+			g.addColorStop(1, "#FFFFFF");
+			c.fillStyle=g;
+			c.arc(400, 300, 200, 0, Math.PI*2);
+			c.fill();
+	</script>
+</body>
+</html>

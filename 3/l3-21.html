@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<form action="">
+		学号：<input type="text" name="xh" pattern="[0-9]{4}">
+		<input type="submit">
+	</form>
+	<details open="open">
+		<summary>点击率</summary>
+		<p>该文章目前点击率</p>
+		<ul>
+			<li>
+				8000以上：很火
+				<br>
+				<meter max="10000" min="0" low="3000" high="8000" option="" value="8001">
+				</meter>
+			</li>
+			<li>
+				3000-8000：一般
+				<br>
+				<meter max="10000" min="0" high="8000" low="3000" value="4000">
+					4000
+				</meter>
+			</li>
+			<li>
+				3000以下：很差
+				<br>
+				<meter max="10000" min="0" high="8000" low="3000" value="1000">
+					1000
+				</meter>
+			</li>
+		</ul>
+	</details>
+</body>
+</html>
