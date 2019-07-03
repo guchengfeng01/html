@@ -1,0 +1,7 @@
+@charset="UTF-8";
+input[type="tel"]{background: red;}
+p[lang|="en"]{color: pink;}
+input[value^="vip"]{background: green;}
+a[href^="http"]{color: green;}
+a[href$=".cn"]{color: yellow;}
+input[value*='vip']{background: gray;}
