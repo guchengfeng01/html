@@ -1,1 +1,6 @@
-l6-9.css
+@charset="UTF-8";
+/*:root{background: green;}*/
+/*li:first-child{color: red;}*/
+/*li:last-child{color: red;}*/
+/*li:only-child{color: red;}*/
+p:only-of-type{color: red;}
